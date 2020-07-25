@@ -14,7 +14,7 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink to="/register" activeClassName={style.active}>
-            Register{' '}
+            Register
           </NavLink>
         </li>
         <li>
@@ -23,8 +23,8 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/phoneBook" activeClassName={style.active}>
-            Phone Book
+          <NavLink to="/contacts" activeClassName={style.active}>
+            Contacts
           </NavLink>
         </li>
       </ul>

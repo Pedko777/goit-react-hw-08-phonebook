@@ -3,10 +3,10 @@ import ConatctForm from '../../components/conactForm/ContactForm';
 import ContactList from '../../components/contactList/ContactList';
 import Filter from '../../components/filter/Filter';
 import Logo from '../../components/logo/Logo';
-import styles from './PhoneBook.module.css';
+import styles from './Contacts.module.css';
 // import themeSwitch from '../../services/themeSwitch';
 
-const PhoneBook = ({ contacts,  isLoadingContact }) => {
+const Contacts = ({ contacts,  isLoadingContact }) => {
     // console.log(theme)
   // let themeState = 'light';
   // theme ? (themeState = 'light') : (themeState = 'dark');
@@ -32,4 +32,4 @@ const PhoneBook = ({ contacts,  isLoadingContact }) => {
   );
 };
 
-export default PhoneBook;
+export default Contacts;

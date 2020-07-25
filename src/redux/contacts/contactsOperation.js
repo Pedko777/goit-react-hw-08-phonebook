@@ -36,7 +36,6 @@ const deleteContact = id => dispatch => {
 
 const changeContact = (id, name, number) => dispatch => {
   dispatch(contactsAction.changeContactRequest());
-
   axios
     .patch(`/contacts/${id}`, { number, name })
     .then(({data}) => {

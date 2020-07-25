@@ -7,15 +7,15 @@ import themeSelectors from '../../redux/theme/themeSelectors';
 import themeAction from '../../redux/theme/themeAction';
 
 
-import PhoneBook from './PhoneBook';
+import Contacts from './Contacts';
 
-class PhoneBookContainer extends Component {
+class ContactsContainer extends Component {
   componentDidMount() {
     this.props.onFetchContacts();
   }
 
   render() {
-    return <PhoneBook {...this.props} />;
+    return <Contacts {...this.props} />;
   }
 }
 
@@ -33,4 +33,4 @@ const mapDispatchToProps = dispatch => ({
   onFetchContacts: () => dispatch(contactsOperation.fetchContacts()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(PhoneBookContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(ContactsContainer);
