@@ -6,7 +6,8 @@ import Logo from '../../components/logo/Logo';
 import styles from './Contacts.module.css';
 // import themeSwitch from '../../services/themeSwitch';
 
-const Contacts = ({ contacts,  isLoadingContact }) => {
+
+const Contacts = ({ contacts,  isLoadingContact, isAuthenticated }) => {
     // console.log(theme)
   // let themeState = 'light';
   // theme ? (themeState = 'light') : (themeState = 'dark');
