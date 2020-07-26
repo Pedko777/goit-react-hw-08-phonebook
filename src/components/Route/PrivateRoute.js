@@ -2,6 +2,8 @@ import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import authSelector from '../../redux/auth/authSelector';
+// import withAuth from "../hoc/withAuth";
+// import {withRouter} from "react-router-dom"
 
 const PrivateRoute = ({
   component: Component,
@@ -27,3 +29,4 @@ const mapStateToProps = state => {
 };
 
 export default connect(mapStateToProps)(PrivateRoute);
+// export default withRouter(withAuth(PrivateRoute))

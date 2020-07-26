@@ -31,7 +31,7 @@ class ContactListItem extends Component {
           name: {contact.name} tel: {contact.number}
         </p>
 
-        {!isShowForm && (
+        {/* {!isShowForm && (
           <button
             className={styles.listItemButton}
             type="button"
@@ -39,7 +39,7 @@ class ContactListItem extends Component {
           >
             Start Edit
           </button>
-        )}
+        )} */}
 
         <button
           className={styles.listItemButton}
@@ -49,7 +49,7 @@ class ContactListItem extends Component {
           Delete
         </button>
 
-        {isShowForm && (
+        {/* {isShowForm && (
           <form className={styles.editForm} onSubmit={this.handleSubmit}>
             <label className={styles.label}>
               Name*
@@ -77,7 +77,7 @@ class ContactListItem extends Component {
               EDIT
             </button>
           </form>
-        )}
+        )} */}
       </li>
     );
   }

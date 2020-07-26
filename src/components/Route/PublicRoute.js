@@ -2,6 +2,8 @@ import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import authSelector from '../../redux/auth/authSelector';
+// import withAuth from "../hoc/withAuth"
+// import {withRouter} from "react-router-dom"
 
 const PublicRoute = ({
   component: Component,
@@ -26,3 +28,5 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(PublicRoute);
+
+// export default withRouter(withAuth(PublicRoute))
