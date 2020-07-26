@@ -6,8 +6,9 @@ import routes from '../../routes';
 import { connect } from 'react-redux';
 import authSelector from '../../redux/auth/authSelector';
 
-const Navigation = ({isAuthenticated}) => {
-  console.log(routes)
+
+const Navigation = ({ isAuthenticated }) => {
+  console.log(routes);
   return (
     <nav className={style.nav}>
       {/* {routes.map(route=>)} */}
@@ -22,28 +23,13 @@ const Navigation = ({isAuthenticated}) => {
         </NavLink>
       ))} */}
 
-      <ul className={style.list}>
-        <li>
-          <NavLink exact to="/" activeClassName={style.active}>
-            Home Page
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/register" activeClassName={style.active}>
-            Register
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/login" activeClassName={style.active}>
-            Login
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/contacts" activeClassName={style.active}>
-            Contacts
-          </NavLink>
-        </li>
-      </ul>
+      <NavLink exact to="/" activeClassName={style.active}>
+        Home Page
+      </NavLink>
+
+      {isAuthenticated && <NavLink to="/contacts" activeClassName={style.active}>
+        Contacts
+      </NavLink> }
     </nav>
   );
 };
