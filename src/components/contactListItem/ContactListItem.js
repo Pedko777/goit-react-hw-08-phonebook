@@ -23,8 +23,8 @@ class ContactListItem extends Component {
 
   render() {
     const { contact, isShowForm, addIdEditContact, deleteContact } = this.props;
-    const { name, number } = this.state;
-    console.log(addIdEditContact);
+    // const { name, number } = this.state;
+    // console.log(addIdEditContact);
     return (
       <li className={styles.listItem}>
         <p className={styles.listItemP}>
